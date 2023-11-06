@@ -17,7 +17,7 @@ stages{
       steps{
         script{
 
-            unitTest()
+            sh 'mvn test'
 
         }
 
