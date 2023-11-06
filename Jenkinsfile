@@ -11,4 +11,16 @@ stages{
 }
 
 }
+
+
+stages{
+    stage('mvn unit test'){
+      steps{
+
+        unitTest()
+      }
+}
+
+}
+
 }
