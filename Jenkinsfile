@@ -13,8 +13,13 @@ stages{
 
     stage('mvn unitest'){
       steps{
+        script{
 
-        unitTest()
+            unitTest()
+
+        }
+
+        
       }
 }
 
