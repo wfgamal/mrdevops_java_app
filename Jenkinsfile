@@ -3,6 +3,10 @@
 pipeline{
 
   agent any
+  tools {
+        maven 'Maven 3.9.5'
+        jdk 'Java 17.0.4.1'
+    }
 
 stages{
     stage('Git checkout'){
