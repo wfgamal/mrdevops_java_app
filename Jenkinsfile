@@ -10,11 +10,8 @@ stages{
       }
 }
 
-}
 
-
-stages{
-    stage('mvn unit test'){
+    stage('mvn unitest'){
       steps{
 
         unitTest()
