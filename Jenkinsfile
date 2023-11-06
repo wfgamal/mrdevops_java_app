@@ -1,3 +1,5 @@
+@Library('shared-lib') _
+
 pipeline{
 
   agent any
@@ -11,7 +13,7 @@ stages{
 }
 
 
-    stage('mvn unitest'){
+    stage('mvn uniTest'){
       steps{
         script{
 
