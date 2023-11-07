@@ -1,5 +1,5 @@
 // @Library('shared-lib') _
-@Library('shared-lib') _  
+@Library("shared-lib") _
 
 pipeline{
 
@@ -18,11 +18,11 @@ stages{
 }
 
 
-    stage('mvn uniTest'){
+    stage('mvn unitTest'){
       steps{
         script{
 
-            unitTest()
+            mvnTest()
 
         }
 
