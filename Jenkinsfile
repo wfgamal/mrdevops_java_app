@@ -31,7 +31,7 @@ stages{
 }
 
 
-    stage('mvn unitTest'){
+    stage('mvn Integration Test'){
       steps{
         script{
 
