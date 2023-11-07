@@ -66,6 +66,7 @@ stages{
 }
 
 stage('quality Gate check: sonarqube'){
+      timeout(time: 5, unit: 'MINUTES')
       steps{
         script{
 
