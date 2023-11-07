@@ -41,6 +41,17 @@ stages{
 
       }
 }
+
+tage('mvn Build'){
+      steps{
+        script{
+
+            mvnBuild()
+
+        }
+
+      }
+}
 }
 
 }
