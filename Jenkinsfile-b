@@ -1,4 +1,8 @@
-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
+squ_adfdade417c6e0ff09352d1a541b43c868b9bdb6
+
+withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR-TOKEN')]) {
+    // some block
+}
 
 @Library('my-shared-library') _    
 

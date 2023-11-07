@@ -52,6 +52,17 @@ stages{
 
       }
 }
+
+    stage('Static code Analysis'){
+      steps{
+        script{
+
+            staticAnalysis('sonarqube')
+
+        }
+
+      }
+}
 }
 
 }
