@@ -42,7 +42,7 @@ stages{
       }
 }
 
-tage('mvn Build'){
+    stage('mvn Build'){
       steps{
         script{
 
