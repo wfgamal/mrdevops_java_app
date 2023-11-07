@@ -53,11 +53,12 @@ stages{
       }
 }
 
-    stage('Static code Analysis'){
+    stage('StaticCode Analysis: sonarqube'){
       steps{
         script{
 
-            staticAnalysis('sonarqube')
+            def SonarQubecredentialsId = 'sonarqube'
+            staticAnalysis(SonarQubecredentialsId)
 
         }
 
