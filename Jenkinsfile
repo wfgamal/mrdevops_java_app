@@ -30,6 +30,18 @@ stages{
       }
 }
 
+
+    stage('mvn unitTest'){
+      steps{
+        script{
+
+            mvnIntegrationTest()
+
+        }
+
+        
+      }
+}
 }
 
 }
