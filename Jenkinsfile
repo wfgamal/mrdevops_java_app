@@ -68,7 +68,7 @@ stages{
 stage('quality Gate check: sonarqube'){
       
       steps{
-        timeout(time: 5, unit: 'MINUTES')
+        
         script{
 
             def SonarQubecredentialsId = 'sonarqube'
