@@ -64,6 +64,18 @@ stages{
 
       }
 }
+
+stage('quality Gate check: sonarqube'){
+      steps{
+        script{
+
+            def SonarQubecredentialsId = 'sonarqube'
+            qualityGate(SonarQubecredentialsId)
+
+        }
+
+      }
+}
 }
 
 }
