@@ -42,16 +42,7 @@ stages{
       }
 }
 
-    stage('mvn Build'){
-      steps{
-        script{
-
-            mvnBuild()
-
-        }
-
-      }
-}
+    
 
     stage('StaticCode Analysis: sonarqube'){
       steps{
@@ -73,6 +64,17 @@ stage('quality Gate check: sonarqube'){
 
             def SonarQubecredentialsId = 'sonarqube'
             qualityGate(SonarQubecredentialsId)
+
+        }
+
+      }
+}
+
+    stage('mvn Build'){
+      steps{
+        script{
+
+            mvnBuild()
 
         }
 
