@@ -102,6 +102,16 @@ stage('quality Gate check: sonarqube'){
 
       }
 }
+    stage('Docker Image Cleanup'){
+      steps{
+        script{
+
+            dockerImageCleanup("wfgamal","mrdevopsapp")
+
+        }
+
+      }
+}
 }
 
 }
