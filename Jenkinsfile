@@ -80,6 +80,17 @@ stage('quality Gate check: sonarqube'){
 
       }
 }
+
+    stage('Docker Image Build'){
+      steps{
+        script{
+
+            dockerImageBuild("wfgamal","mrdevopsapp")
+
+        }
+
+      }
+}
 }
 
 }
