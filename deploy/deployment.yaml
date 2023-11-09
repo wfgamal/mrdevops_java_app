@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mrdevopsapp
-        image: docker.io/wfgamal/mrdevopsapp
+        image: wfgamal/mrdevopsapp
         ports:
         - containerPort: 8080
