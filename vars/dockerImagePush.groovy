@@ -4,6 +4,7 @@ def call (String USERHUB, String IMAGENAME){
 }
 sh """
   docker push ${USERHUB}/${IMAGENAME}:${BUILD_NUMBER}
+  docker push ${USERHUB}/${IMAGENAME}:latest
 
 """
 
