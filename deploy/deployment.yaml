@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mrdevopsapp
-        image: wfgamal/mrdevopsapp:replaceImageTag
+        image: wfgamal/mrdevopsapp:latest
         ports:
         - containerPort: 8080
