@@ -1,4 +1,6 @@
 squ_adfdade417c6e0ff09352d1a541b43c868b9bdb6
+http://192.168.49.2:32478
+argocd: z0UAE9QjIlVmB8PY3GSxsLFaDkrZWi5H
 
 withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR-TOKEN')]) {
     // some block
