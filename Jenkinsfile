@@ -92,16 +92,16 @@ stage('quality Gate check: sonarqube'){
       }
 }
 
-//     stage('Docker Image scan: Trivy'){
-//       steps{
-//         script{
+    stage('Docker Image scan: Trivy'){
+      steps{
+        script{
 
-//             dockerImageScan("wfgamal","mrdevopsapp")
+            dockerImageScan("wfgamal","mrdevopsapp")
 
-//         }
+        }
 
-//       }
-// }
+      }
+}
     stage('Docker Image Push'){
       steps{
         script{
