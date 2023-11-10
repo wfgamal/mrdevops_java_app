@@ -3,6 +3,8 @@ http://192.168.49.2:32478
 argocd: z0UAE9QjIlVmB8PY3GSxsLFaDkrZWi5H
 gihub token: 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
 
+kubectl --namespace default logs --selector app.kubernetes.io/name=argocd-image-updater --follow
+
 withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR-TOKEN')]) {
     // some block
 }
