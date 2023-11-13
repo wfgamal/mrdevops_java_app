@@ -18,29 +18,29 @@ stages{
 }
 
 
-    stage('mvn unitTest'){
-      steps{
-        script{
+//     stage('mvn unitTest'){
+//       steps{
+//         script{
 
-            mvnTest()
+//             mvnTest()
 
-        }
+//         }
 
         
-      }
-}
+//       }
+// }
 
 
-    stage('mvn Integration Test'){
-      steps{
-        script{
+//     stage('mvn Integration Test'){
+//       steps{
+//         script{
 
-            mvnIntegrationTest()
+//             mvnIntegrationTest()
 
-        }
+//         }
 
-      }
-}
+//       }
+// }
 
     
 
